@@ -1,0 +1,398 @@
+html,body,.main{
+    font-family:  '微软雅黑','YaHei','黑体','Hei',Tahoma,Helvetica,arial,sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.slide2{
+    background: url('img/swiper/14.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.slide1{
+    background: url('img/swiper/true%20(11).jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.music{
+    opacity: 0;
+    z-index: 111;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url("audio/music.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+}
+.musicCur{
+    -webkit-animation: move 1s linear infinite both;
+    animation: move 1s linear infinite both;
+}
+@-webkit-keyframes move {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes move {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.slide2 h3{
+    margin: 0.3rem 0 0 0.3rem;
+    font-size: 0.5rem;
+    color: #FFFFFF;
+}
+.slide2 h3 span{
+    font-size: 1rem;
+}
+.slide2 h3:nth-child(3){
+    margin: 0 0 0 1rem;
+}
+.slide2 div:nth-child(1){
+    margin: 1rem auto 0;
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 2rem;
+    overflow: hidden;
+}
+.slide2 div img{
+    width: 100%;
+    height: 100%;
+}
+.slide2 span{
+    color:#FFFFFF;
+    font-size: 0.5rem;
+    margin: 0 auto;
+}
+.slide1 div:nth-child(1){
+    width: 2rem;
+    height: 4.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+#page1 div:nth-child(1){
+    animation: flip 1s 1 both;
+}
+#page1 div:nth-child(2){
+    animation: flip 1s 1 1s both;
+}
+.slide1 div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+}
+.slide1 div:nth-child(2){
+    width: 1.5rem;
+    height: 3.5rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+.slide1 div:nth-child(2) img{
+    width: 100%;
+    height:100%;
+}
+.slide2 div:nth-child(4){
+    position:relative;
+    width: 100%;
+    height:0;
+}
+.slide2 ul li{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.1rem;
+    height:1.1rem;
+    background: url("img/swiper/true%20(1).jpg");
+    border-radius: 50%;
+    font-size: 0.3rem;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+#page2 h3,.slide2 span{
+    animation: shake 1s 1 both;
+}
+#page2 div:nth-child(4){
+    animation: move2 2s 1 0.8s both;
+}
+#page2 div:nth-child(4) li{
+    display: block;
+    animation: fadeInDown 1s 1 1s both;
+}
+#page2 div:nth-child(4) li:nth-child(1){
+    top: 3.3rem;
+    left: 0.5rem;
+    animation: fadeInDown 1s 1 1.2s both;
+}
+#page2 div:nth-child(4) li:nth-child(2){
+     top: 1.5rem;
+     left: 5rem;
+     animation: fadeInDown 1s 1 1.2s both;
+ }
+#page2 div:nth-child(4) li:nth-child(3){
+    top: 1.7rem;
+    left: 2.5rem;
+    animation: fadeInDown 1s 1 1.3s both;
+}
+#page2 div:nth-child(4) li:nth-child(4){
+    top: 4rem;
+    left: 4rem;
+    animation: fadeInDown 1s 1 1.4s both;
+}
+@keyframes  move2{
+    0%{
+        height: 0;
+        display:none;
+    }
+    100%{
+        height: 5rem;
+        display:block;
+    }
+}
+/*slide3*/
+.slide3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("img/swiper/true.jpg") lightgoldenrodyellow bottom right no-repeat;
+    background-size: 100% 100% ;
+}
+.tab-choose{
+    width: 100%;
+    height: 100%;
+}
+.tab-control {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1rem;
+    z-index: 100;
+}
+.tab-control a {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    height: 88%;
+    width: 23%;
+    margin: 0 1%;
+    border-radius: 50%;
+    padding: 0.2rem;
+    font-size: 0.4rem;
+    text-align: center;
+    background: url("img/swiper/true%20(1).jpg");
+}
+.tab-control a:hover{
+    color: lightpink;
+    -webkit-animation: move 1s linear infinite both;
+    animation: move 1s linear  both;
+  }
+.tabs{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+.tab{
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+    width:100%;
+}
+.tab span{
+    text-align: right;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+}
+.tab .Info{
+    color: #fff;
+    box-sizing: border-box;
+    width: 96%;
+    height: 0;
+    overflow: hidden;
+    padding:0;
+    top: 52%;
+    left: 0;
+    position: absolute;
+}
+.tab{
+    display: none;
+}
+.tab .Info div span:nth-child(2){
+    text-align: left;
+    width: 4rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.tab:target{
+    display: block;
+}
+.tab:target .Info{
+    margin: 2%;
+    line-height: 0.8rem;
+    font-size:0.3rem;
+    -webkit-animation: hei 1s  1.2s linear forwards ;
+    animation: hei 1s 1.2s linear forwards ;
+}
+.tab:target .imgs{
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 96%;
+    margin: 2%;
+    animation: flipInX 1s 1.2s  linear forwards;
+}
+.tab:target .imgs img.cur{
+    width: 93%;
+    height: 100%;
+}
+.tab .imgs img.cur{
+    width: 100%;
+    height: 100%;
+}
+.tab .imgs{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+@keyframes hei {
+    0%{
+        height: 0;
+        padding:0;
+        border: 2px solid red;
+    }
+    100%{
+        height: 46%;
+        padding: 1rem 0;
+        border: 2px solid red;
+    }
+}
+@keyframes hei2 {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 45%;
+    }
+}
+@keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+        width: 100%;
+        height: 45%;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        width: 100%;
+        height: 45%;
+    }
+}
+
+/*拼图*/
+.slide4{
+    background: url("img/swiper/x10.jpeg");
+    background-size: 100% 100%;
+}
+#picbox{
+    width: 6rem;
+    height: 6rem;
+    background-color: pink;
+    position: relative;
+    margin: 0.2rem auto;
+}
+.controller h1{
+    width: 100%;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 2rem;
+    color: pink;
+}
+.timeGo{
+    height: 0.6rem;
+}
+.timeGo #go{
+    height: 0.6rem;
+    width: 2rem;
+    background-color: pink;
+    font-size: 0.4rem;
+    color: green;
+    line-height: 0.6rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+.pic{
+    border: 0.01rem solid pink;
+    width: 1.96rem;
+    height: 1.96rem;
+    float: left;
+    background: url('img/1.jpeg');
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    background-size: 300% 300%;
+}
+.controller{
+    text-align: center;
+    position: relative;
+}
+#times{
+    border-radius: 0.2rem;
+    padding:0  0.4rem;
+    border:0.01rem dashed pink;
+    margin-left: 0.5rem;
+    display: none;
+    text-align: center;
+    color: pink;
+    font-size: 0.4rem;
+}
+.slide5 span{
+
+    display: inline-block;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/cube.css">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        var desW = 640;//设备稿的宽度
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+    </script>
+</head>
+<body>
+        <article class="main">
+            <div class="music">
+                <audio src="audio/Kalimba.mp3" id="beyond" preload="none" loop ></audio>
+                <!--显示用户界面
+                controls    显示用户操作页面
+                autoplay     自动播放
+                preload
+                        auto    预加载音频文件
+                        metadata    只加载音频文件的元数据（例如）
+                        none    不提前进行预加载
+                -->
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1" >
+                        <div><img src="img/swiper/jl.png" alt=""></div>
+                        <div><img src="img/swiper/sxy.png" alt=""></div>
+                        <!--<div class="pic">
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                    <div class="swiper-slide slide2" >
+                    <div><img src="img/swiper/hd.png" alt=""></div>
+                    <h3><span>如</span>果我不曾见过太阳，</h3><h3>我本可以忍受黑暗。</h3>
+                        <div>
+                            <img src="img/swiper/15.png" alt="">
+                            <ul>
+                                <li>JS</li>
+                                <li>H5</li>
+                                <li>CSS</li>
+                                <li>NODE</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3" >
+                        <div class="tab-choose">
+                            <div class="tab-control">
+                                <!--
+                            --><a href="#tab1">个人信息</a><!--
+                            --><a href="#tab2">求学信息</a><!--
+                            --><a href="#tab3">联系方式</a><!--
+                            --><a href="#tab4">获得证书</a><!--
+                        --></div>
+                            <div class="tabs" id="tabs">
+                                <div id="tab1" class="tab">
+                                    <div class="imgs"><img src="img/swiper/1.jpg" alt="" class="cur">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+                                    <div class="Info">
+                                        <div><span>姓名：</span><span>申肖云</span></div>
+                                        <div><span>年龄：</span><span>20</span></div>
+                                        <div><span>籍贯：</span><span>河北廊坊</span></div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab">
+                                <div class="imgs">
+                                    <img src="img/swiper/2.jpg"  class="cur" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="Info">
+                                    <div><span>学历：</span><span>本科</span></div>
+                                    <div><span>毕业院校：</span><span>河北农业大学</span></div>
+                                    <div><span>专业：</span><span>物联网工程</span>
+                                    </div>
+                                </div>
+                            </div>
+                                <div id="tab3" class="tab">
+                                    <div class="imgs"><img src="img/swiper/3.jpg" alt="" class="cur">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+                                    <div class="Info">
+                                        <div><span>TEL：</span><span>15733289056</span></div>
+                                        <div><span>QQ：</span><span>248768926</span></div>
+                                        <div><span>E-mail：</span><span>bjshenxiaoyun10@163.com</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="swiper-slide slide4" >
+                        <div class="pt ">
+                            <div class='controller'>
+                                <h1>玩个游戏吧<(￣︶￣)↗[GO!]</h1>
+                                <div class="timeGo">
+                                    <button id='go'>go</button>
+                                    <span id='times'></span>
+                                </div>
+                            </div>
+                            <div id='picbox' class="swiper-no-swiping">
+                                <div class="pic" data-index='1' style='background-position:0px 0px;left:0px;top:0px;'></div>
+                                <div class="pic" data-index='2' style='background-position:-1.99rem 0px;left:1.99rem;top:0px;'></div>
+                                <div class="pic" data-index='3' style='background-position:-3.99rem 0px;left:3.99rem;top:0px;'></div>
+                                <div class="pic" data-index='4' style='background-position:0px -1.99rem;left:0px;top:1.99rem;'></div>
+                                <div class="pic" data-index='5' style='background-position:-1.99rem -1.99rem;left:1.99rem;top:1.99rem;'></div>
+                                <div class="pic" data-index='6' style='background-position:-3.99rem -1.99rem;left:3.99rem;top:1.99rem;'></div>
+                                <div class="pic" data-index='7' style='background-position:0px -3.99rem;left:0px;top:3.99rem;'></div>
+                                <div class="pic" data-index='8' style='background-position:-1.99rem -3.99rem;left:1.99rem;top:3.99rem;'></div>
+                                <div class="pic" data-index='9' style='background-position:-3.99rem -3.99rem;left:3.99rem;top:3.99rem;'></div>
+                            </div>
+                            <span></span>
+
+                        </div>
+                        </div>
+                    <div class="swiper-slide slide5">
+                    <div class="cube"> <span>我的技能</span>
+                        <ul class="cubeBox swiper-no-swiping">
+                            <li><img src="img/cube/1.jpg" alt=""/></li>
+                            <li><img src="img/cube/2.jpg" alt=""/></li>
+                            <li><img src="img/cube/3.png" alt=""/></li>
+                            <li><img src="img/cube/4.jpg" alt=""/></li>
+                            <li><img src="img/cube/6.jpg" alt=""/></li>
+                            <li><img src="img/cube/7.png" alt=""/></li>
+                        </ul>
+                    </div>
+                </div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+</body>
+</html>
+<script src="js/fastclick.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/cube.js"></script>
+<script src="js/pt.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        effect : 'fade',
+        direction: 'vertical',
+   /*     pagination: '.swiper-pagination',
+        paginationType: 'progress'*/
+        loop: true, /*
+        effect: 'coverflow',
+        lazyLoading: true,
+        onInit:function(swiper){
+            console.log(swiper instanceof  Swiper);
+        },
+        onSlideChangeStart:function(swiper){
+        },
+        onSlideChangeEnd :function(swiper){
+
+        },*/
+        onTransitionEnd :function(swiper){
+                var curIndex=swiper.activeIndex;/*返回当前活动块的索引(如果往下滑，上一个滑块的索引，如果是往上滑，则是下一个滑块的索引)*/
+            var sildes=swiper.slides;//获得所有的滑块
+            [].forEach.call(sildes,function(item,index){
+                item.id='';
+                if(curIndex==index){
+                    item.id = 'page'+index ;
+                    if(curIndex==sildes.length-1) {
+                        item.id = 'page1';
+                    }
+                    if(curIndex==0){
+                        item.id = 'page'+(sildes.length-2) ;
+                    }
+                }
+            });
+        }
+        /*循环模式不需要*/
+       /* onInit:function(swiper){
+            /!*初始化后给第一个滑块加id名*!/
+            var slides=swiper.slides;
+            slides[0].id='page1';
+        }*/
+    });
+    var music=document.querySelector(".music");
+    var beyond=document.querySelector("#beyond");
+    console.log(music);
+    window.setTimeout(function(){
+        beyond.play();
+        /*边缓冲边播放*/
+        beyond.addEventListener("canplay",function(){
+            music.style.opacity=1;
+            music.className='music musicCur';
+        })
+    },1000);
+    music.addEventListener('click',function(){
+        if(beyond.paused){//beyond.paused true为停止，false为播放
+            beyond.play();
+            music.className='music musicCur';
+        }else{
+            beyond.pause();//停止
+            music.className='music'
+        }
+    })
+</script>
