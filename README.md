@@ -1,2 +1,1 @@
-# movejl
-# jianli
+# mobile-resume
